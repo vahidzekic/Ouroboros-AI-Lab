@@ -85,7 +85,7 @@ Instalacija i održavanje privatnih instanci AI asistenata za firme. Zamislite C
 **Model pretplate:**
 ```
 ┌─────────────────────────────────────────────────────────┐
-│  📦 STARTER        │  🏢 BUSINESS      │  🏗️ ENTERPRISE  │
+│  📦 STARTER       │  🏢 BUSINESS      │  🏗️ ENTERPRISE  │
 │  100 €/mes        │  200 €/mes        │  300+ €/mes     │
 │                   │                   │                 │
 │  • 1 AI model     │  • 3 AI modela    │  • Neograničeno │
