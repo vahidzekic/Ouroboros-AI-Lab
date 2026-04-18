@@ -85,13 +85,13 @@ Instalacija i održavanje privatnih instanci AI asistenata za firme. Zamislite C
 **Model pretplate:**
 ```
 ┌─────────────────────────────────────────────────────────┐
-│  📦 STARTER      │  🏢 BUSINESS      │  🏗️ ENTERPRISE  │
-│  100 €/mes       │  200 €/mes        │  300+ €/mes     │
-│                   │                    │                  │
-│  • 1 AI model     │  • 3 AI modela    │  • Neograničeno  │
-│  • 5 korisnika    │  • 20 korisnika   │  • Custom setup  │
-│  • Email podrška  │  • Prioritet      │  • 24/7 podrška  │
-│  • 50GB storage   │  • 200GB storage  │  • 1TB+ storage  │
+│  📦 STARTER       │  🏢 BUSINESS      │  🏗️ ENTERPRISE  │
+│  100 €/mes        │  200 €/mes        │  300+ €/mes     │
+│                   │                   │                 │
+│  • 1 AI model     │  • 3 AI modela    │  • Neograničeno │
+│  • 5 korisnika    │  • 20 korisnika   │  • Custom setup │
+│  • Email podrška  │  • Prioritet      │  • 24/7 podrška │
+│  • 50GB storage   │  • 200GB storage  │  • 1TB+ storage │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -106,13 +106,13 @@ Prilagođavanje AI modela specifičnim potrebama klijenta. Treniramo modele na v
 **Proces fine-tuninga:**
 
 ```
-┌──────────┐    ┌──────────────┐    ┌──────────────┐    ┌──────────────┐
-│ 1. PODACI │──▶│ 2. PRIPREMA  │──▶│ 3. TRENING   │──▶│ 4. DEPLOY    │
+┌───────────┐    ┌──────────────┐    ┌──────────────┐    ┌──────────────┐
+│ 1. PODACI │───▶│ 2. PRIPREMA  │───▶│ 3. TRENING   │───▶│ 4. DEPLOY    │
 │           │    │              │    │              │    │              │
 │ Klijent   │    │ Čišćenje,    │    │ Fine-tuning  │    │ Produkcija   │
 │ dostavi   │    │ formatiranje │    │ na našem GPU │    │ na vašem     │
 │ podatke   │    │ i validacija │    │ klasteru     │    │ serveru      │
-└──────────┘    └──────────────┘    └──────────────┘    └──────────────┘
+└───────────┘    └──────────────┘    └──────────────┘    └──────────────┘
 ```
 
 **Konkretni primeri:**
@@ -179,37 +179,37 @@ curl -X POST https://bridge.ouroboros-ai.rs/v1/inference \
 
 ```
 ╔══════════════════════════════════════════════════════════════════════════╗
-║                    OUROBOROS AI LAB – GPU KLASTER                       ║
-║                        Ukupno: 288GB VRAM                              ║
+║                    OUROBOROS AI LAB – GPU KLASTER                        ║
+║                        Ukupno: 288GB VRAM                                ║
 ╠══════════════════════════════════════════════════════════════════════════╣
-║                                                                        ║
-║  ┌─────────────────────────────┐    ┌─────────────────────────────┐    ║
-║  │   🖥️  NODE 1 (X99)          │    │   🖥️  NODE 2 (Dual Xeon)    │    ║
-║  │                             │    │                             │    ║
-║  │   GPU: 4x NVIDIA RTX 3090  │    │   GPU: 4x NVIDIA RTX 8000  │    ║
-║  │   VRAM: 96 GB (4x24GB)     │◄──►│   VRAM: 192 GB (4x48GB)    │    ║
-║  │   Namena: Brzi inference    │    │   Namena: Training +        │    ║
-║  │   (odgovori u realnom       │    │   rad sa ogromnim           │    ║
-║  │    vremenu)                 │    │   modelima                  │    ║
-║  │                             │    │                             │    ║
-║  │   CPU: Intel X99 chipset    │    │   CPU: 2x Intel Xeon       │    ║
-║  │   RAM: 64GB DDR4           │    │   RAM: 128GB+ DDR4 ECC     │    ║
-║  │   Storage: 2TB NVMe SSD    │    │   Storage: 4TB NVMe SSD    │    ║
-║  └─────────────────────────────┘    └─────────────────────────────┘    ║
-║                          │                      │                      ║
-║                          └──────────┬───────────┘                      ║
-║                                     │                                  ║
-║                      ┌──────────────┴──────────────┐                   ║
-║                      │   🌐 MREŽA                   │                   ║
-║                      │   40Gbps QSFP+ Mellanox      │                   ║
-║                      │   Ultrabrza interna           │                   ║
-║                      │   komunikacija               │                   ║
-║                      └──────────────────────────────┘                   ║
-║                                                                        ║
-║  Software Stack:                                                       ║
-║  • Proxmox VE (virtualizacija)  • Docker + Kubernetes                  ║
-║  • NVIDIA CUDA 12.x             • PyTorch / TensorFlow                 ║
-║  • Ollama / vLLM / TGI          • Ouroboros Bridge (custom API)        ║
+║                                                                          ║
+║  ┌─────────────────────────────┐    ┌─────────────────────────────┐      ║
+║  │   🖥️  NODE 1 (X99)          │    │   🖥️  NODE 2 (Dual Xeon)     │      ║
+║  │                             │    │                             │      ║
+║  │   GPU: 4x NVIDIA RTX 3090   │    │   GPU: 4x NVIDIA RTX 8000   │      ║
+║  │   VRAM: 96 GB (4x24GB)      │◄──►│   VRAM: 192 GB (4x48GB)     │      ║
+║  │   Namena: Brzi inference    │    │   Namena: Training +        │      ║
+║  │   (odgovori u realnom       │    │   rad sa ogromnim           │      ║
+║  │    vremenu)                 │    │   modelima                  │      ║
+║  │                             │    │                             │      ║
+║  │   CPU: Intel X99 chipset    │    │   CPU: 2x Intel Xeon        │      ║
+║  │   RAM: 64GB DDR4            │    │   RAM: 128GB+ DDR4 ECC      │      ║
+║  │   Storage: 2TB NVMe SSD     │    │   Storage: 4TB NVMe SSD     │      ║
+║  └─────────────────────────────┘    └─────────────────────────────┘      ║
+║                          │                      │                        ║
+║                          └──────────┬───────────┘                        ║
+║                                     │                                    ║
+║                      ┌──────────────┴──────────────┐                     ║
+║                      │   🌐 MREŽA                  │                     ║
+║                      │   40Gbps QSFP+ Mellanox     │                     ║
+║                      │   Ultrabrza interna         │                     ║
+║                      │   komunikacija              │                     ║
+║                      └─────────────────────────────┘                     ║
+║                                                                          ║
+║  Software Stack:                                                         ║
+║  • Proxmox VE (virtualizacija)  • Docker + Kubernetes                    ║
+║  • NVIDIA CUDA 12.x             • PyTorch / TensorFlow                   ║
+║  • Ollama / vLLM / TGI          • Ouroboros Bridge (custom API)          ║
 ╚══════════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -469,7 +469,7 @@ ROI:                    ~104-193%
       │                         │
       │   Advokat:    3-5 dana  │
       │   Cloud AI:   2-3 min   │
-      │   Ouroboros:  15 sek ⚡ │
+      │   Ouroboros:  15 sek ⚡  │
       │                         │
       │   📄 1.000 strana       │
       │   🎯 100% tačnost       │
@@ -608,17 +608,17 @@ ROI:                    ~104-193%
     <td width="40%" align="center">
       <br/>
       <code>
-      ┌─────────────────────────┐
-      │   📈 RISK ANALIZA       │
-      │                         │
-      │   Zahteva:     10.000   │
-      │   Vreme:       3 min    │
-      │   vs. ručno:   5-7 dana │
-      │                         │
-      │   Tačnost:     96.8%    │
-      │   Fraud det:   23 slučaja│
-      │   Po zahtevu:  1.8 sek  │
-      └─────────────────────────┘
+      ┌───────────────────────────┐
+      │   📈 RISK ANALIZA         │
+      │                           │
+      │   Zahteva:     10.000     │
+      │   Vreme:       3 min      │
+      │   vs. ručno:   5-7 dana   │
+      │                           │
+      │   Tačnost:     96.8%      │
+      │   Fraud det:   23 slučaja │
+      │   Po zahtevu:  1.8 sek    │
+      └───────────────────────────┘ 
       </code>
     </td>
   </tr>
